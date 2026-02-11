@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - Tech Shop</title>
         <meta name="description" content="It is just a demo website for a web performance optimization project. It is not a real e-commerce website and does not have any functionality.">
-        <link rel="preload" href="/css/styles.css" as="style">
-        <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="/css/styles.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -53,7 +52,13 @@
             <picture>
                 <source width="576" height="576" media="(max-width:576px)" srcset="images/Hero_Mobile.webp">
                 <source width="960" height="770" media="(max-width:960px)" srcset="images/Hero_Tablet.webp">
-                <img width="1920" height="893" src="images/Hero_Desktop.webp" alt="A man wearing a VR headset">
+                <img 
+                    width="1920" 
+                    height="893" 
+                    src="images/Hero_Desktop.webp" 
+                    alt="A man wearing a VR headset"
+                    fetchpriority="high"
+                >
             </picture>
            
             <div class="hero-content">
@@ -197,7 +202,7 @@
         <script type="text/javascript" src="js/products.js"></script>
 
         <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-        <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
+        <script type="text/javascript" src="https://www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js"
             charset="UTF-8" defer></script>
         <script type="text/javascript" charset="UTF-8" defer>
             document.addEventListener("DOMContentLoaded", () => {
