@@ -79,11 +79,6 @@ window.onload = () => {
         if (positionProductSection - bottomPositionOfScroll < 0 && !contentLoaded) {
             contentLoaded = true;
             loadProducts();
-    
-            // Simulate heavy operation. It could be a complex price calculation.
-            for (let i = 0; i < 10000000; i++) {
-                const temp = Math.sqrt(i) * Math.sqrt(i);
-            }
         }
     }
 }
